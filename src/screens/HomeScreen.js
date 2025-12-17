@@ -3,7 +3,7 @@ import { View, Text } from "react-native";
 export default function HomeScreen() {
   return (
     <View>
-      <Text>Home Screen</Text>
+      <Text style={{color: "#74FE6A", textAlign: "center", fontSize: 50, flex: 2, marginTop: 290}}>ANA SAYFA</Text>
     </View>
   );
 }

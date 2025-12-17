@@ -1,10 +1,9 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import PostsStackNavigator from "./PostsStackNavigator";
 
 import HomeScreen from "../screens/HomeScreen";
-import PostsScreen from "../screens/PostsScreen";
-import PhotosScreen from "../screens/PhotosScreen";
+import PostsStackNavigator from "./PostsStackNavigator";
+import PhotoStackNavigator from "./PhotoStackNavigator";
 
 const Tab = createBottomTabNavigator();
 
@@ -14,7 +13,7 @@ export default function AppNavigator() {
       <Tab.Navigator>
         <Tab.Screen name="Home" component={HomeScreen} />
         <Tab.Screen name="Posts" component={PostsStackNavigator} />
-        <Tab.Screen name="Photos" component={PhotosScreen} />
+        <Tab.Screen name="Photos" component={PhotoStackNavigator} />
       </Tab.Navigator>
     </NavigationContainer>
   );
