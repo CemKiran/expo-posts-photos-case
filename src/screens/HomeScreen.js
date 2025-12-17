@@ -2,8 +2,10 @@ import { View, Text } from "react-native";
 
 export default function HomeScreen() {
   return (
-    <View>
-      <Text style={{color: "#74FE6A", textAlign: "center", fontSize: 50, flex: 2, marginTop: 290}}>ANA SAYFA</Text>
+    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+      <Text style={{ color: "#74FE6A", fontSize: 50, fontWeight: "800" }}>
+        ANA SAYFA
+      </Text>
     </View>
   );
 }
