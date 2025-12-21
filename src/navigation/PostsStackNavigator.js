@@ -3,6 +3,8 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import PostsScreen from "../screens/PostsScreen";
 import PostDetailScreen from "../screens/PostDetailScreen";
 import PostsListScreen from "../screens/PostsListScreen";
+import PostEditScreen from "../screens/PostEditScreen";
+
 
 
 const Stack = createNativeStackNavigator();
@@ -20,6 +22,11 @@ export default function PostsStackNavigator() {
         component={PostDetailScreen}
         options={{ title: "Detay" }}
       />
+      <Stack.Screen
+         name="PostEdit"
+        component={PostEditScreen}
+        options={{ title: "Post Düzenle" }}
+  />
     </Stack.Navigator>
   );
 }
